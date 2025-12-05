@@ -14,12 +14,12 @@ npm install @justrelate/icon-picker
 
 ```ts
 // IconWidgetEditingConfig.ts
-import { ScrivitoBootstrapIconEditor } from '@justrelate/icon-picker'
+import { ScrivitoBootstrapIconPicker } from '@justrelate/icon-picker'
 
 provideEditingConfig(IconWidget, {
   propertiesGroups: [
     {
-      component: ScrivitoBootstrapIconEditor,
+      component: ScrivitoBootstrapIconPicker,
       key: 'icon-group',
       properties: ['icon'],
       title: 'Icon',
@@ -30,24 +30,24 @@ provideEditingConfig(IconWidget, {
 
 #### Importing styles
 
-The `ScrivitoBootstrapIconEditor` includes built-in styles for easy integration. To apply these styles, import the following CSS files in your project:
+The `ScrivitoBootstrapIconPicker` includes built-in styles for easy integration. To apply these styles, import the following CSS files in your project:
 
 ```scss
 // scrivitoExtensions.scss
 @import 'bootstrap-icons/font/bootstrap-icons.css';
-@import '@justrelate/icon-picker/ScrivitoIconEditor.css';
+@import '@justrelate/icon-picker/ScrivitoIconPicker.css';
 ```
 
 #### Using the icon editor with options
 
 ```tsx
 // defaultPageEditingConfig.tsx
-import { ScrivitoBootstrapIconEditor } from '@justrelate/icon-picker'
+import { ScrivitoBootstrapIconPicker } from '@justrelate/icon-picker'
 
 export const defaultPagePropertiesGroups = [
   {
     component: (props: { page: Obj }) => (
-      <ScrivitoBootstrapIconEditor
+      <ScrivitoBootstrapIconPicker
         attribute="linkIcon"
         description="This icon may appear in a vertical navigation widget, for example."
         showClearButton
