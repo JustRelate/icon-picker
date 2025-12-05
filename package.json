@@ -1,6 +1,6 @@
 {
   "name": "@justrelate/icon-picker",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A versatile icon picker for Scrivito and React applications with Bootstrap Icons support",
   "keywords": [
     "icon-picker",
