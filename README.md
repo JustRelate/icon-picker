@@ -1,11 +1,11 @@
-# Scrivito Icon Editor
+# JustRelate Icon Picker
 
-The `scrivito-icon-editor` is a versatile icon picker designed for seamless integration with [Scrivito](https://www.scrivito.com) and React applications. It supports [Bootstrap Icons](https://icons.getbootstrap.com) out of the box but can work with any icon set. Easily integrate it into your projects to add icons with custom styling and functionality.
+The `@justrelate/icon-picker` is a versatile icon picker designed for seamless integration with [Scrivito](https://www.scrivito.com) and React applications. It supports [Bootstrap Icons](https://icons.getbootstrap.com) out of the box but can work with any icon set. Easily integrate it into your projects to add icons with custom styling and functionality.
 
 ## Installation
 
 ```sh
-npm install scrivito-icon-editor
+npm install @justrelate/icon-picker
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install scrivito-icon-editor
 
 ```ts
 // IconWidgetEditingConfig.ts
-import { ScrivitoBootstrapIconEditor } from 'scrivito-icon-editor'
+import { ScrivitoBootstrapIconEditor } from '@justrelate/icon-picker'
 
 provideEditingConfig(IconWidget, {
   propertiesGroups: [
@@ -35,14 +35,14 @@ The `ScrivitoBootstrapIconEditor` includes built-in styles for easy integration.
 ```scss
 // scrivitoExtensions.scss
 @import 'bootstrap-icons/font/bootstrap-icons.css';
-@import 'scrivito-icon-editor/ScrivitoIconEditor.css';
+@import '@justrelate/icon-picker/ScrivitoIconEditor.css';
 ```
 
 #### Using the icon editor with options
 
 ```tsx
 // defaultPageEditingConfig.tsx
-import { ScrivitoBootstrapIconEditor } from 'scrivito-icon-editor'
+import { ScrivitoBootstrapIconEditor } from '@justrelate/icon-picker'
 
 export const defaultPagePropertiesGroups = [
   {
@@ -79,7 +79,7 @@ The Bootstrap icon picker features built-in support for Bootstrap Icons, making 
 
 ```tsx
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import { BootstrapIconPicker } from 'scrivito-icon-editor'
+import { BootstrapIconPicker } from '@justrelate/icon-picker'
 
 function BoostrapIconPickerDemo() {
   const [icon, setIcon] = useState<string | undefined>('rocket-takeoff')
@@ -108,7 +108,7 @@ function BoostrapIconPickerDemo() {
 The generic icon picker is designed to work seamlessly with any React application and any icon set, providing you with the flexibility to choose icons that best suit your project’s needs. For optimal styling, ensure to include the relevant CSS to adjust the picker’s appearance according to your design requirements.
 
 ```tsx
-import { IconPicker } from 'scrivito-icon-editor'
+import { IconPicker } from '@justrelate/icon-picker'
 
 function IconPickerDemo() {
   const [icon, setIcon] = useState<string | undefined>('rocket')

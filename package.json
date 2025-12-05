@@ -1,6 +1,14 @@
 {
-  "name": "scrivito-icon-editor",
+  "name": "@justrelate/icon-picker",
   "version": "0.0.3",
+  "description": "A versatile icon picker for Scrivito and React applications with Bootstrap Icons support",
+  "keywords": [
+    "icon-picker",
+    "scrivito",
+    "react",
+    "bootstrap-icons",
+    "icon-editor"
+  ],
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
@@ -12,7 +20,9 @@
     "dist"
   ],
   "types": "./dist/index.d.ts",
-  "repository": "github:JustRelate/scrivito-icon-editor",
+  "repository": "github:JustRelate/icon-picker",
+  "bugs": "https://github.com/JustRelate/icon-picker/issues",
+  "homepage": "https://github.com/JustRelate/icon-picker#readme",
   "scripts": {
     "build": "rm -rf dist && tsc && cp src/*.css dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
