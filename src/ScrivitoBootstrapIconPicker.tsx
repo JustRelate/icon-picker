@@ -2,8 +2,8 @@ import type { Widget, Obj } from 'scrivito'
 import { uiContext, canEdit, connect, isInPlaceEditingActive } from 'scrivito'
 import { BootstrapIconPicker } from './BootstrapIconPicker.js'
 
-export const ScrivitoBootstrapIconEditor = connect(
-  function ScrivitoBootstrapIconEditor({
+export const ScrivitoBootstrapIconPicker = connect(
+  function ScrivitoBootstrapIconPicker({
     attribute,
     description,
     obj,
@@ -31,7 +31,7 @@ export const ScrivitoBootstrapIconEditor = connect(
       isInPlaceEditingActive() && canEdit(obj || page || widget.obj())
 
     return theme ? (
-      <div className={`scrivito_${theme} scrivito-icon-editor`}>
+      <div className={`scrivito_${theme} scrivito-icon-picker`}>
         <div className="description">{description}</div>
         <div className="preview-title">{previewTitle ?? 'Preview'}</div>
         <BootstrapIconPicker
