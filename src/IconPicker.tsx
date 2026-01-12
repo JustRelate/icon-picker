@@ -29,7 +29,7 @@ export function IconPicker({
       <label
         aria-label={disabled ? undefined : ariaSearchLabel}
         className="icon-preview"
-        htmlFor={inputId}
+        htmlFor={disabled ? undefined : inputId}
         title={activeIcon}
       >
         {renderFunc(activeIcon)}
