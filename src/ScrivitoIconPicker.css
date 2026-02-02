@@ -1,4 +1,5 @@
 .scrivito-icon-picker {
+  --icon-background-color: unset;
   --icon-clear-shadow-color: rgba(255, 255, 255, 0.2);
   --icon-description-color: #666;
   --icon-input-active-background: #fff;
@@ -18,6 +19,7 @@
   --icon-select-button-hover-background: #fafafa;
   --icon-select-button-hover-color: #333;
 
+  background-color: var(--icon-background-color);
   font-family:
     Helvetica Neue,
     Helvetica,
@@ -194,6 +196,7 @@
   }
 
   &.scrivito_dark {
+    --icon-background-color: #1d2229;
     --icon-clear-shadow-color: rgba(0, 0, 0, 0.8);
     --icon-description-color: #aaa;
     --icon-input-active-background: #eee;
