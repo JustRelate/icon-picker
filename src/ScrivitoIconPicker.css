@@ -25,7 +25,6 @@
     Helvetica,
     Arial,
     sans-serif;
-  padding: 15px;
 
   .description {
     color: var(--icon-description-color);
@@ -213,7 +212,5 @@
     --icon-select-button-color: #ddd;
     --icon-select-button-hover-background: rgba(222, 222, 222, 0.2);
     --icon-select-button-hover-color: #fff;
-
-    padding: 7px;
   }
 }
