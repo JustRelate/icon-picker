@@ -214,3 +214,23 @@
     --icon-select-button-hover-color: #fff;
   }
 }
+
+.scrivito-icon-picker {
+  & .icon-preview {
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    background: rgba(0, 0, 0, 0.07);
+  }
+
+  & .icon-search {
+    & input {
+      color: rgba(0, 0, 0, 0.95);
+      border: 1px solid rgba(0, 0, 0, 0.19);
+      background: rgba(0, 0, 0, 0.07);
+      line-height: 23px;
+    }
+  }
+}
+
+.scrivito-icon-picker {
+  padding: 0;
+}
