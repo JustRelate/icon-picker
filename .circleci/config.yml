@@ -37,3 +37,6 @@ workflows:
       - execute-npm:
           name: npm run prettier
           npm-run-command: prettier
+      - execute-npm:
+          name: npm run audit-signatures
+          npm-run-command: audit-signatures
