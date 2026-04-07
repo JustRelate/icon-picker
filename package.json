@@ -24,6 +24,7 @@
   "bugs": "https://github.com/JustRelate/icon-picker/issues",
   "homepage": "https://github.com/JustRelate/icon-picker#readme",
   "scripts": {
+    "audit-signatures": "npm audit signatures",
     "build": "rm -rf dist && tsc && cp src/*.css dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "prepublishOnly": "npm run build && npm run lint && npm run prettier",
