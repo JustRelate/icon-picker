@@ -4,10 +4,10 @@
   --icon-description-color: #666;
   --icon-input-active-background: #fff;
   --icon-input-active-color: #555;
-  --icon-input-background: #fff;
-  --icon-input-color: #555;
+  --icon-input-background: rgba(0, 0, 0, 0.07);
+  --icon-input-color: rgba(0, 0, 0, 0.95);
   --icon-input-placeholder-color: #999;
-  --icon-preview-background: rgba(255, 255, 255, 0.8);
+  --icon-preview-background: rgba(0, 0, 0, 0.07);
   --icon-preview-color: #444;
   --icon-preview-title-font-size: 13px;
   --icon-preview-title-shadow: none;
@@ -54,6 +54,7 @@
   .icon-preview {
     align-items: center;
     background: var(--icon-preview-background);
+    border: 1px solid rgba(0, 0, 0, 0.19);
     border-radius: 4px;
     color: var(--icon-preview-color);
     display: inline-flex;
@@ -113,7 +114,8 @@
       border-radius: 23px 0 0 23px;
       color: var(--icon-input-color);
       font-size: 11px;
-      line-height: 25px;
+      border: 1px solid rgba(0, 0, 0, 0.19);
+      line-height: 23px;
       margin-right: 31px;
       padding: 1px 3px 1px 10px;
       transition: all 0.5s ease;
@@ -213,24 +215,4 @@
     --icon-select-button-hover-background: rgba(222, 222, 222, 0.2);
     --icon-select-button-hover-color: #fff;
   }
-}
-
-.scrivito-icon-picker {
-  & .icon-preview {
-    border: 1px solid rgba(0, 0, 0, 0.19);
-    background: rgba(0, 0, 0, 0.07);
-  }
-
-  & .icon-search {
-    & input {
-      color: rgba(0, 0, 0, 0.95);
-      border: 1px solid rgba(0, 0, 0, 0.19);
-      background: rgba(0, 0, 0, 0.07);
-      line-height: 23px;
-    }
-  }
-}
-
-.scrivito-icon-picker {
-  padding: 0;
 }
