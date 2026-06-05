@@ -1,3 +1,4 @@
+import type { JSX } from 'react'
 import type { Widget, Obj } from 'scrivito'
 import { uiContext, canEdit, connect, isInPlaceEditingActive } from 'scrivito'
 import { BootstrapIconPicker } from './BootstrapIconPicker.js'
