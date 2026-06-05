@@ -1,4 +1,4 @@
-import { useId, useState } from 'react'
+import { type JSX, useId, useState } from 'react'
 
 export function IconPicker({
   defaultValue,
